@@ -1,6 +1,5 @@
 class Author
-
-  attr_accessor :name, :author
+  attr_accessor :name
 
   @@all = []
 
@@ -23,7 +22,7 @@ class Author
   end
 
   def posts
-    Post.all.select {|p| p.auther == self}
+    Post.all.select {|post| post.author == self}
   end
 
   def self.post_count
