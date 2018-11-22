@@ -13,5 +13,5 @@ class Author
     Post.all.select {|p| p.auther == author}
   end
 
-  
+
     
