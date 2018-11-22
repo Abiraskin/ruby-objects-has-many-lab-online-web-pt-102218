@@ -9,6 +9,6 @@ class Post
   end
 
   def post.all
-    @@all  
+    @@all
   end
     
